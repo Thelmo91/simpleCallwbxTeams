@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Telemedicina DOS</title>
+    <link rel="stylesheet" href="https://downloads.momentum-ui.com/@momentum-ui/core/css/momentum-ui.css">
+    <style>
+      main {
+        padding: 10px;
+      }
+      table {
+        border-collapse: collapse;
+        padding: 10px;
+        margin: 10px;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      thead th {
+        font-weight: bold;
+      }
+      tbody td {
+        min-width: 150px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="wrapper"></div>    
+    <main>
+            <div class="maininterface">
+                <div class="apptitle">
+                  Sala Telemedicina DOS
+                </div>
+                <div class="roomlist" id="roomlist">
+                  <div class="split local">
+                    <div class="centered">
+                      <video class="split local" id="self-view" muted autoplay playsinline></video>
+                    </div>
+                  </div>   
+                  <div class="split remoto">  
+                    <div class="centered">
+                        <audio id="remote-view-audio" autoplay playsinline></audio>
+                        <video id="remote-view-video" autoplay playsinline></video>
+                    </div>
+                  </div>   
+
+                <div class="habilitadores" id="habilitadores">
+                      <input id="constraints-audio" title="audio"  type="checkbox" checked>
+                      <label for="constraints-audio">Audio</label>
+                      <input id="constraints-video" title="video"  type="checkbox" checked>
+                      <label for="constraints-video">Video</label>
+                </div>
+
+                <div class="colgar" id="colgar">
+                </div>
+                <div class="microfono" id="microfono">
+                </div>			
+                <div class="camara" id="camara">
+                </div>			
+                <div class="dialer2" id="dialer2">
+                </div>
+
+                <div class="base">
+                    <div class="webexlogosmall">
+                        <img src="logo.png" width="30" height="30">
+                    </div>
+                </div>
+
+
+                <div class="darkoverlay" id="darkoverlay">
+                    <div class="DOSlogo" id="DOSlogo">
+                      <img src="logoDOS.png" width="110" height="80">
+                    </div>
+                    <div class="webexlogo" id="webexlogo">
+                        <img src="logo.png" width="95" height="95">
+                    </div>
+                    <div class="accesstokenlabel" id="accesstokenlabel">
+                        Codigo de Cita
+                    </div>
+                    <p>
+                        <input type="text" class="tokeninputfield" id="tokeninputfield">
+                    </p>
+                    <div class="greenlogin" id="greenlogin" >
+                        Ingresar
+                    </div>
+                </div>
+                </div>
+
+
+    </main>
+    
+  </div>   
+    <script src="/webex.min.js"></script>
+    <!-- app.js is your application code -->
+    <script src="app.js"></script>
+  </body>
+</html>

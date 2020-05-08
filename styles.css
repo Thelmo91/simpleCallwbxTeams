@@ -1,0 +1,275 @@
+body{
+    background-color: rgb(236,237,238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -20px 0 50 px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.maininterface{
+    position: relative;
+    width: 320px;
+    height: 526px;
+
+    background-attachment: #FFFFFF;
+    box-shadow: 15px 30px 30px
+        rgb(0, 0, 0, 0.25);
+    border-radius: 8px 8px 8px 8px;
+
+}
+
+.apptitle{
+    position: absolute;
+    width: 210px;
+    height: 15px;
+    left: 61px;
+    top: 15px;
+
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #252525;
+}
+
+.roomlist{
+    position: absolute;
+    width: 290px;
+    height: 340px;
+    left: 15px;
+    top: 48px;
+
+    background: #F5F5F5;
+
+    font-weight: normal;
+    font-size: 12px;
+    font-color: #252525;
+
+    color: #252525;
+}
+
+
+
+.split {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+  }
+  
+  .local {
+    top: 0;
+ 
+  }
+  
+  .remoto {
+    bottom: 0;
+
+  }
+  
+  .centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered video {
+    width: 290px;
+    height: 340px;
+
+  }
+
+
+
+.habilitadores{
+    position: absolute;
+    top: 500;
+}
+
+.dialer2{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 250px;
+    top: 420px;
+
+    background:url(./images/check.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 39px;
+    border:none;
+}
+
+
+
+.colgar{
+    position: absolute;
+    width:45px;
+    height:45px;
+    left: 180px;
+    top: 420px;
+    background:url(./images/x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 39px;
+    border:none;
+}
+
+.camara{
+    position: absolute;
+    width:45px;
+    height:45px;
+    left: 100px;
+    top: 420px;
+    background:url(./images/opencam.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 39px;
+    border:none;
+}
+
+
+.microfono{
+    position: absolute;
+    width:45px;
+    height:45px;
+    left: 20px;
+    top: 420px;
+    background:url(./images/openmic.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 39px;
+    border:none;
+}
+
+
+
+
+.base{
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    left: -15px;
+    top: 476px;
+
+    background: #393939;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.webexlogosmall{
+    position: absolute;
+    width: 30px;
+    height: 38px;
+    left: 145px;
+    top: 10px;
+}
+
+.darkoverlay{
+    position: absolute;
+    width: 320px;
+    height: 463px;
+    left: -15px;
+    top: 63px;
+
+    background: #393939;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.darkoverlay2{
+    animation-name: showmain;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.DOSlogo{
+    position: absolute;
+    width: 110px;
+    height: 95px;
+    left: 105px;
+    top: 20px;
+}
+
+.webexlogo{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 105px;
+    top: 129px;
+}
+
+.accesstokenlabel{
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 100px;
+    top: 260px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.infoicon{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 280px;
+    top: 265px;
+
+    color: #FFFFFF;
+}
+
+.tokeninputfield{
+    position: absolute;
+    width: 230px;
+    height: 25px;
+    left: 45px;
+    top: 300px;
+
+    background: #FFFFFF;
+    border-radius: 39px;
+
+    font-size: 13px;
+}
+
+
+.greenlogin{
+    position: absolute;
+    width: 152px;
+    height: 30px;
+    left: 81px;
+    top:  350px;
+
+    background: #42A942;
+    border-radius: 39px;
+
+    font-size: 16px;
+
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+}
+
+@keyframes showmain{
+    from{
+        height: 436px;
+        top:63px;
+    }
+    to{
+        height: 0px;
+        top: 476px;
+    }
+}
